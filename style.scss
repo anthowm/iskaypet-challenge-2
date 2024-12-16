@@ -1,0 +1,65 @@
+$green: #7ab800;
+$red: #cc292b;
+$breakpoint-mobile: 768px;
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.banner {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+
+  &__image {
+    background-color: #e0e0e0;
+    padding: 2rem 0;
+    font-weight: bold;
+  }
+
+  &__title {
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  &__button {
+    background-color: $green;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      background-color: darken($green, 10%);
+    }
+  }
+
+  // Responsive breakpoint
+  @media (max-width: $breakpoint-mobile) {
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media (min-width: $breakpoint-mobile + 1) {
+    &--mobile {
+      display: none;
+    }
+  }
+}
