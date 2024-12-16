@@ -23,7 +23,7 @@
 1. **Clone the Repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/anthowm/iskaypet-challenge-2.git
    cd iskaypet-challenge-2
    ```
 
